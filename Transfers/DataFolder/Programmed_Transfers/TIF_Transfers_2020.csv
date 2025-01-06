@@ -1,0 +1,57 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-001,35th/Halsted,35th/Wallace,To,-4500000,Police facility rehab
+T-001,35th/Halsted,Archer/Western,To,-800000,Library - repairs
+T-001,35th/Halsted,Archer/Western,To,-5770000,McGuane Park
+T-013,Bryn Mawr/Broadway,Red Purple Transit,From,9581900,Red Purple Modernization Transit TIF
+T-023,Goose Island,Cortland Chicago River,To,-100000,Street improvements
+T-037,River South,Roosevelt Clark,To,-2450000,Bridge repairs
+T-038,Roosevelt/Cicero,Harrison/Central,To,-144300,RDA - Loretto Hospital
+T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-12677300,MSAC DS - 2010 - Westinghouse HS
+T-054,Stony Island Avenue Commercial and Burnside Industrial Corridors,North Pullman,To,-1500000,Gately Park
+T-057,Jefferson Park Business District,Portage Park,From,2500000,CTA Blue Line Modernization
+T-058,Portage Park,Jefferson Park,To,-2500000,CTA Blue Line Modernization
+T-060,71st/Stony Island,Avalon Park/South Shore,From,22600,Invest South West Program
+T-061,Bronzeville,47th/King,From,3000000,Williams Park
+T-064,Northwest Industrial Corridor,Galewood/Armitage,To,-6000000,MSAC DS - Prieto Elementary
+T-071,Galewood/Armitage Industrial,Northwest Ind. Corr.,From,6000000,MSAC DS - Prieto Elementary
+T-075,Madison/Austin Corridor,Harrison/Central,To,-144300,RDA - Loretto Hospital
+T-076,Devon/Western,Western Ave. North,From,1800000,Lighting
+T-076,Devon/Western,Touhy/Western,To,-3190000,MSAC Bond - West Ridge Elementary - 2010-A - Callable
+T-076,Devon/Western,Touhy/Western,To,-1833200,MSAC Bond - West Ridge Elementary - 2010-B
+T-079,35th and Wallace,35th/Halsted,From,4500000,Police facility rehab
+T-084,Western Avenue North,Devon/Western,To,-1800000,Lighting
+T-084,Western Avenue North,Foster/California,To,-515000,Lighting
+T-084,Western Avenue North,Foster/California,To,-1100000,RDA - Swedish Covenant Hospital
+T-088,Lawrence/Kedzie,Lawrence/Pulaski,From,1000000,CPS - Peterson ES
+T-089,Midway Industrial Corridor,Stevenson/Brighton,To,-3150000,Park District headquarters
+T-097,51st/Archer,63rd/Pulaski,From,2605000,MSAC DS - Hernandez MS
+T-098,63rd/Pulaski,51st/Archer,To,-2605000,MSAC DS - Hernandez MS
+T-109,Lawrence/Broadway,Red Purple Transit,From,20062300,Red Purple Modernization Transit TIF
+T-109,Lawrence/Broadway,Hollywood/Sheridan,To,-575800,RDA - Hollywood House
+T-110,Wilson Yard,Red Purple Transit,From,5710700,Red Purple Modernization Transit TIF
+T-113,Roseland/Michigan,North Pullman,To,-296100,RDA - Whole Foods Distribution
+T-115,Chicago/Central Park,Kinzie Ind. Corr.,From,12677300,MSAC DS - 2010 - Westinghouse HS
+T-116,Lawrence/Pulaski,Lawrence/Kedzie,To,-1000000,CPS - Peterson ES
+T-118,47th/King Drive,Bronzeville,To,-3000000,Williams Park
+T-123,Avalon Park/South Shore,71st/Stony Island,To,-22600,Invest South West Program
+T-134,Devon/Sheridan,Red Purple Transit,From,1200200,Red Purple Modernization Transit TIF
+T-144,Harrison/Central,Madison/Austin,From,144300,RDA - Loretto Hospital
+T-144,Harrison/Central,Roosevelt/Cicero,From,144300,RDA - Loretto Hospital
+T-146,Touhy/Western,Devon/Western,From,3190000,MSAC Bond - West Ridge Elementary - 2010-A - Callable
+T-146,Touhy/Western,Devon/Western,From,1833200,MSAC Bond - West Ridge Elementary - 2010-B
+T-149,Stevenson/Brighton,Midway Ind. Corr.,From,3150000,Park District headquarters
+T-157,Hollywood/Sheridan,Lawrence/Broadway,From,575800,RDA - Hollywood House
+T-157,Hollywood/Sheridan,Red Purple Transit,From,13614200,Red Purple Modernization Transit TIF
+T-163,Archer/Western,35th/Halsted,From,800000,Library - repairs
+T-163,Archer/Western,35th/Halsted,From,5770000,McGuane Park
+T-166,North Pullman,Roseland/Michigan,From,296100,RDA - Whole Foods Distribution
+T-166,North Pullman,Stony Island/Burnside,From,1500000,Gately Park
+T-177,Foster/California,Western Ave. North,From,515000,Lighting
+T-177,Foster/California,Western Ave. North,From,1100000,RDA - Swedish Covenant Hospital
+T-180,Red Purple Transit,Bryn Mawr/Broadway,To,-9581900,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Devon/Sheridan,To,-1200200,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Hollywood/Sheridan,To,-13614200,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Lawrence/Broadway,To,-20062300,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Wilson Yard,To,-5710700,Red Purple Modernization Transit TIF
+T-183,Cortland Chicago River,Goose Island,From,100000,Street improvements
+T-184,Roosevelt Clark,River South,From,2450000,Bridge repairs

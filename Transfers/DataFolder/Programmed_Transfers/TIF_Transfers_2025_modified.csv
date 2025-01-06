@@ -1,0 +1,21 @@
+,TIF Number,TIF1,TIF2,Direction,Amount,Project
+0,T-176,107th/Halsted,119th/I-57,From,1400000,Invest South West Program
+1,T-125,119th/I-57,107th/Halsted,To,-1400000,Invest South West Program
+2,T-072,24th/Michigan,Michigan/Cermak,From,3750000,RDA - 2222 S Michigan - Rehab
+3,T-117,47th/Ashland,47th/Halsted,From,3833300,Invest South West Program
+4,T-121,47th/Halsted,47th/Ashland,To,-3833300,Invest South West Program
+5,T-063,Canal/Congress,Roosevelt Clark,To,-24285800,Infra-Structure - Roosevelt Clark TIF
+6,T-115,Chicago/Central Park,Kinzie Industrial Corridor,From,3250000,Invest South West Program
+7,T-108,Humboldt Park Commercial,Pulaski Corridor,To,-3000000,Invest South West Program
+8,T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-3250000,Invest South West Program
+9,T-075,Madison/Austin Corridor,Midwest,From,2000000,Invest South West Program
+10,T-075,Madison/Austin Corridor,Northwest Industrial Corridor,From,3000000,Invest South West Program
+11,T-029,Michigan/Cermak,24th/Michigan,To,-3750000,RDA - 2222 S Michigan - Rehab
+12,T-095,Midwest,Madison/Austin Corridor,To,-2000000,Invest South West Program
+13,T-095,Midwest,Ogden/Pulaski,To,-6408000,Invest South West Program
+14,T-166,North Pullman,Roseland/Michigan,From,150000,RDA - Whole Foods Distribution
+15,T-064,Northwest Industrial Corridor,Madison/Austin Corridor,To,-3000000,Invest South West Program
+16,T-161,Ogden/Pulaski,Midwest,From,6408000,Invest South West Program
+17,T-069,Pulaski Corridor,Humboldt Park Commercial,From,3000000,Invest South West Program
+18,T-184,Roosevelt Clark,Canal/Congress,From,24285800,Infra-Structure - Roosevelt Clark TIF
+19,T-113,Roseland/Michigan,North Pullman,To,-150000,RDA - Whole Foods Distribution

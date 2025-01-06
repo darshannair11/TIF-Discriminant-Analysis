@@ -1,0 +1,107 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-061,Bronzeville,47th/King,From,1400000,Dunbar Park
+T-061,Bronzeville,47th/King,From,3000000,Williams Park
+T-087,Fullerton/Milwaukee,Avondale,To,-500000,SBIF
+T-134,Devon/Sheridan,Clark/Ridge,To,-3111800,Repay prior transfer
+T-118,47th/King Drive,Bronzeville,To,-1400000,Dunbar Park
+T-013,Bryn Mawr/Broadway,Hollywood/Sheridan,To,-297000,CHA Fisher Apts
+T-081,Belmont/Central,Galewood/Armitage,To,-2050000,MSAC DS - Prieto Elementary
+T-118,47th/King Drive,Bronzeville,To,-3000000,Williams Park
+T-092,Greater Southwest Industrial Corridor (West),67th/Cicero,From,976500,Park 484
+T-084,Western Avenue North,Western Ave. South,From,800000,Streetscape - Lawrence Av
+T-142,Western Avenue/Rock Island,111th/Kedzie,From,500000,Morgan Park Sports Center
+T-143,63rd/Ashland,67th/Wentworth,To,-45000,Retail Thrive Zone
+T-142,Western Avenue/Rock Island,119th/I-57,From,331100,Blackwelder Park
+T-075,Madison/Austin Corridor,Midwest,From,13890000,MSAC DS - Austin HS & DePriest Elementary
+T-083,West Irving Park,Read/Dunning,From,70000,Repay prior transfer
+T-048,Western/Ogden,Roosevelt/Racine,To,-1570000,Addams-Medill Sports Center
+T-060,71st/Stony Island,Woodlawn,From,2000000,MSAC DS - South Shore HS
+T-075,Madison/Austin Corridor,Northwest Ind. Corr.,From,5000000,MSAC DS - Austin HS & DePriest Elementary
+T-166,North Pullman,Roseland/Michigan,From,473300,RA - Whole Foods Distribution
+T-150,Addison South,Diversey Chicago River,To,-5000,Bridge repairs
+T-085,Western Avenue South,Western Ave. North,To,-800000,Streetscape - Lawrence Av
+T-149,Stevenson/Brighton,Midway Ind. Corr.,From,300000,CPS - Brighton Park II
+T-038,Roosevelt/Cicero,Ogden/Pulaski,To,-440000,CPS - Crown
+T-063,Canal/Congress,River South,To,-24000000,CPS - South Loop ES
+T-161,Ogden/Pulaski,Roosevelt/Cicero,From,440000,CPS - Crown
+T-052,Kinzie Industrial Corridor,Midwest,To,-4000000,MSAC DS - Collins HS
+T-029,Michigan/Cermak,Calumet/Cermak,To,-2681700,Repay prior transfer
+T-069,Pulaski Corridor,Chicago/Central Park,To,-3100000,MSAC DS - Westinghouse
+T-061,Bronzeville,47th/King,From,600000,Dog Park - 39th & Indiana
+T-115,Chicago/Central Park,Kinzie Ind. Corr.,From,13547700,MSAC DS - Westinghouse
+T-048,Western/Ogden,Roosevelt/Racine,To,-2000000,RA - 1340 W Taylor Apts
+T-157,Hollywood/Sheridan,Lawrence/Broadway,From,575800,RA - Hollywood House
+T-084,Western Avenue North,Foster/California,To,-733400,RA - Swedish Covenant Hospital
+T-113,Roseland/Michigan,North Pullman,To,-473300,RA - Whole Foods Distribution
+T-142,Western Avenue/Rock Island,95th/Western,From,1000000,Morgan Park Sports Center
+T-174,67th/Wentworth,63rd/Ashland,From,45000,Retail Thrive Zone
+T-115,Chicago/Central Park,Kinzie Ind. Corr.,From,1260000,Skate Park - 3349 W Rice St
+T-084,Western Avenue North,Lincoln Ave.,To,-10500000,MSAC DS - Mather HS
+T-177,Foster/California,Western Ave. North,From,375000,Traffic signals
+T-048,Western/Ogden,Midwest,To,-2500000,RA - Mt Sinai Hospital
+T-009,95th and Western,Western/Rock Island,To,-1000000,Morgan Park Sports Center
+T-149,Stevenson/Brighton,Midway Ind. Corr.,From,1000000,Park District headquarters
+T-095,Midwest,Chicago/Central Park,To,-223000,MSAC DS - Raby Horticultural
+T-073,111th Street/Kedzie Avenue Business District,Western/Rock Island,To,-500000,Morgan Park Sports Center
+T-035,North-Cicero,Austin Commercial,To,-3265000,Retail Thrive Zone
+T-089,Midway Industrial Corridor,51st/Archer,To,-11345700,MSAC DS - Hernandez MS
+T-118,47th/King Drive,Bronzeville,To,-400000,Traffic signals
+T-109,Lawrence/Broadway,Hollywood/Sheridan,To,-575800,RA - Hollywood House
+T-097,51st/Archer,Midway Ind. Corr.,From,11345700,MSAC DS - Hernandez MS
+T-057,Jefferson Park Business District,Portage Park,From,2500000,CTA Blue Line Modernization
+T-054,Stony Island Avenue Commercial and Burnside Industrial Corridors,71st/Stony Island,To,-2750000,MSAC DS - South Shore HS
+T-130,Edgewater/Ashland,Clark/Ridge,From,1400000,Park - 5700 Ashland
+T-146,Touhy/Western,Devon/Western,From,2069700,MSAC DS - West Ridge Elementary
+T-179,Diversey Chicago River,Addison South,From,5000,Bridge repairs
+T-074,Clark Street and Ridge Avenue,Edgewater/Ashland,To,-1400000,Park - 5700 Ashland
+T-097,51st/Archer,63rd/Pulaski,From,2641000,MSAC DS - Hernandez MS
+T-164,Little Village East,Sanitary & Ship Canal,From,130000,Street resurfacing
+T-095,Midwest,Kinzie Ind. Corr.,From,4000000,MSAC DS - Collins HS
+T-076,Devon/Western,Touhy/Western,To,-2069700,MSAC DS - West Ridge Elementary
+T-157,Hollywood/Sheridan,Bryn Mawr/Broadway,From,297000,CHA Fisher Apts
+T-156,Austin Commercial,North/Cicero,From,3265000,Retail Thrive Zone
+T-124,67th/Cicero,Greater SW Ind. Corr. West,To,-976500,Park 484
+T-077,Lincoln Avenue,Western Ave. North,From,10500000,MSAC DS - Mather HS
+T-103,Lake Calumet Area Industrial,Commercial Ave.,From,2000000,Bridge repairs
+T-089,Midway Industrial Corridor,Stevenson/Brighton,To,-300000,CPS - Brighton Park II
+T-125,119th/I-57,105th/Vincennes,To,-706800,RA - Renaissance Beverly Ridge
+T-115,Chicago/Central Park,Midwest,From,223000,MSAC DS - Raby Horticultural
+T-169,Ewing Avenue,Lake Calumet,To,-450000,Repay prior transfer
+T-128,Commercial Avenue,Lake Calumet,To,-2000000,Bridge repairs
+T-059,Calumet Avenue/Cermak Road,Michigan/Cermak,From,2681700,Repay prior transfer
+T-062,Roosevelt/Racine,Western/Ogden,From,2000000,RA - 1340 W Taylor Apts
+T-084,Western Avenue North,Foster/California,To,-375000,Traffic signals
+T-095,Midwest,Western/Ogden,From,2500000,RA - Mt Sinai Hospital
+T-062,Roosevelt/Racine,Western/Ogden,From,1570000,Addams-Medill Sports Center
+T-121,47th/Halsted,Washington Park,To,-1587500,RA - Life Center Artists Residences
+T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-1260000,Skate Park - 3349 W Rice St
+T-064,Northwest Industrial Corridor,Madison/Austin,To,-5000000,MSAC DS - Austin HS & DePriest Elementary
+T-115,Chicago/Central Park,Pulaski Corridor,From,3100000,MSAC DS - Westinghouse
+T-095,Midwest,Madison/Austin,To,-13890000,MSAC DS - Austin HS & DePriest Elementary
+T-074,Clark Street and Ridge Avenue,Devon/Sheridan,From,3111800,Repay prior transfer
+T-089,Midway Industrial Corridor,Stevenson/Brighton,To,-1000000,Park District headquarters
+T-042,Sanitary Drainage and Ship Canal,Little Village East,To,-130000,Street resurfacing
+T-178,Washington Park,47th/Halsted,From,1587500,RA - Life Center Artists Residences
+T-037,River South,Canal/Congress,From,24000000,CPS - South Loop ES
+T-036,Read-Dunning,West Irving Park,To,-70000,Repay prior transfer
+T-167,Avondale,Fullerton/Milwaukee,From,500000,SBIF
+T-060,71st/Stony Island,Stony Island/Burnside,From,2750000,MSAC DS - South Shore HS
+T-103,Lake Calumet Area Industrial,Ewing Ave.,From,450000,Repay prior transfer
+T-060,71st/Stony Island,87th/Cottage Grove,From,1000000,MSAC DS - South Shore HS
+T-065,Woodlawn,71st/Stony Island,To,-2000000,MSAC DS - South Shore HS
+T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-13547700,MSAC DS - Westinghouse
+T-036,Read-Dunning,West Irving Park,From,1700000,Dunning Salt Dome
+T-147,LaSalle Central,Canal/Congress,To,-7300000,Viaduct improvements
+T-177,Foster/California,Western Ave. North,From,733400,RA - Swedish Covenant Hospital
+T-071,Galewood/Armitage Industrial,Belmont/Central,From,2050000,MSAC DS - Prieto Elementary
+T-111,105th/Vincennes,119th/I-57,From,706800,RA - Renaissance Beverly Ridge
+T-125,119th/I-57,Western/Rock Island,To,-331100,Blackwelder Park
+T-118,47th/King Drive,Bronzeville,To,-600000,Dog Park - 39th & Indiana
+T-063,Canal/Congress,LaSalle Central,From,7300000,Viaduct improvements
+T-037,River South,Canal/Congress,From,17000000,Wells St - Roosevelt to Archer
+T-061,Bronzeville,47th/King,From,400000,Traffic signals
+T-098,63rd/Pulaski,51st/Archer,To,-2641000,MSAC DS - Hernandez MS
+T-058,Portage Park,Jefferson Park,To,-2500000,CTA Blue Line Modernization
+T-083,West Irving Park,Read/Dunning,To,-1700000,Dunning Salt Dome
+T-063,Canal/Congress,River South,To,-17000000,Wells St - Roosevelt to Archer
+T-127,87th/Cottage Grove,71st/Stony Island,To,-1000000,MSAC DS - South Shore HS

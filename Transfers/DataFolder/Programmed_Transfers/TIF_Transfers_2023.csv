@@ -1,0 +1,79 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-111,105th/Vincennes,Roseland/Michigan,To,-3666600,Invest South West Program
+T-176,107th/Halsted,119th/I-57,From,1400000,Invest South West Program
+T-182,116th Ave O,Lake Calumet,From,5088000,RDA - North Point
+T-114,119th and Halsted,Roseland/Michigan,To,-2333400,Invest South West Program
+T-125,119th/I-57,107th/Halsted,To,-1400000,Invest South West Program
+T-072,24th/Michigan,Michigan/Cermak,To,-3750000,RDA - 2222 S Michigan - Rehab
+T-079,35th and Wallace,35th/Halsted,To,-4500000,Police facility rehab
+T-001,35th/Halsted,35th/Wallace,From,4500000,Police facility rehab
+T-001,35th/Halsted,Archer/Western,To,-550000,Proposed Park Park Projects
+T-001,35th/Halsted,Archer/Western,To,-1369400,Proposed Park Project
+T-001,35th/Halsted,Archer/Western,To,-400000,CPD - McKinley Park
+T-001,35th/Halsted,Archer/Western,To,-6840000,CPS - Holden ES
+T-001,35th/Halsted,Archer/Western,To,-1262100,CTA - Orange Line - 35th/Archer Station
+T-060,71st/Stony Island,87th/Cottage Grove,From,750000,Invest South West Program
+T-060,71st/Stony Island,Avalon Park/South Shore,To,-2501800,Invest South West Program
+T-056,79th Street Corridor,79th/Southwest Hwy,From,3766700,Invest South West Program
+T-056,79th Street Corridor,79th/Vincennes,From,500000,Invest South West Program
+T-056,79th Street Corridor,Greater SW Ind. Corr. East,From,1000000,Invest South West Program
+T-112,79th Street/Southwest Highway,79th Street Corridor,To,-3766700,Invest South West Program
+T-155,79th/Vincennes,79th Street Corridor,To,-500000,Invest South West Program
+T-127,87th/Cottage Grove,71st/Stony Island,To,-750000,Invest South West Program
+T-163,Archer/Western,35th/Halsted,From,400000,CPD - McKinley Park
+T-163,Archer/Western,35th/Halsted,From,6840000,CPS - Holden ES
+T-163,Archer/Western,35th/Halsted,From,1262100,CTA - Orange Line - 35th/Archer Station
+T-163,Archer/Western,35th/Halsted,From,550000,Proposed Park Park Projects
+T-163,Archer/Western,35th/Halsted,From,1369400,Proposed Park Project
+T-156,Austin Commercial,Northwest Ind. Corr.,From,11600000,Invest South West Program
+T-123,Avalon Park/South Shore,71st/Stony Island,From,2501800,Invest South West Program
+T-063,Canal/Congress,Roosevelt Clark,To,-12142900,Infra-Structure - Roosevelt Clark TIF
+T-063,Canal/Congress,Roosevelt Clark,To,-2000000,Lighting
+T-129,Diversey/Narragansett,Galewood/Armitage,From,4500000,Riis Park
+T-021,Englewood Mall,Englewood Neighborhood,From,3600000,Invest South West Program
+T-106,Englewood Neighborhood,Englewood Mall,To,-3600000,Invest South West Program
+T-181,Foster Edens,Lawrence/Pulaski,From,1250000,IGA - CPD - Gompers Park
+T-071,Galewood/Armitage Industrial,Diversey/Narragansett,To,-4500000,Riis Park
+T-066,Greater Southwest Industrial Corridor (East),Greater SW Ind. Corr. West,From,1845000,IGA - CPS - Southside Occupational H.S.
+T-066,Greater Southwest Industrial Corridor (East),79th Street Corridor,To,-1000000,Invest South West Program
+T-092,Greater Southwest Industrial Corridor (West),Greater SW Ind. Corr. East,To,-1845000,IGA - CPS - Southside Occupational H.S.
+T-144,Harrison/Central,Midwest,From,2500000,Redevelopment Project
+T-108,Humboldt Park Commercial,Pulaski Corridor,To,-3000000,Invest South West Program
+T-101,Jefferson/Roosevelt,Roosevelt Clark,To,-5000000,Bridge - Taylor St
+T-103,Lake Calumet Area Industrial,116th Ave O,To,-5088000,RDA - North Point
+T-116,Lawrence/Pulaski,Foster Edens,To,-1250000,IGA - CPD - Gompers Park
+T-075,Madison/Austin Corridor,Midwest,From,1000000,Invest South West Program
+T-075,Madison/Austin Corridor,Northwest Ind. Corr.,From,4000000,Invest South West Program
+T-029,Michigan/Cermak,24th/Michigan,From,3750000,RDA - 2222 S Michigan - Rehab
+T-089,Midway Industrial Corridor,Stevenson/Brighton,To,-6000000,Park District headquarters
+T-095,Midwest,Harrison/Central,To,-2500000,Redevelopment Project
+T-095,Midwest,Madison/Austin,To,-1000000,Invest South West Program
+T-095,Midwest,Ogden/Pulaski,To,-2975800,Invest South West Program
+T-095,Midwest,Ogden/Pulaski,To,-3400000,RDA - Grace Manor Apts
+T-173,Montrose/Clarendon,Wilson Yard,From,3450000,Park - Clarendon Park Fieldhouse
+T-166,North Pullman,Roseland/Michigan,From,160000,RDA - Whole Foods Distribution
+T-166,North Pullman,Stony Island/Burnside,From,1500000,Gately Park
+T-064,Northwest Industrial Corridor,Austin Commercial,To,-11600000,Invest South West Program
+T-064,Northwest Industrial Corridor,Madison/Austin,To,-4000000,Invest South West Program
+T-161,Ogden/Pulaski,Midwest,From,2975800,Invest South West Program
+T-161,Ogden/Pulaski,Midwest,From,3400000,RDA - Grace Manor Apts
+T-161,Ogden/Pulaski,Roosevelt/Cicero,From,8000000,Invest South West Program
+T-069,Pulaski Corridor,Humboldt Park,From,3000000,Invest South West Program
+T-184,Roosevelt Clark,Canal/Congress,From,12142900,Infra-Structure - Roosevelt Clark TIF
+T-184,Roosevelt Clark,Canal/Congress,From,2000000,Lighting
+T-184,Roosevelt Clark,Jefferson/Roosevelt,From,5000000,Bridge - Taylor St
+T-038,Roosevelt/Cicero,Ogden/Pulaski,To,-8000000,Invest South West Program
+T-062,Roosevelt/Racine,Western/Ogden,From,11333400,CHA Transformation project
+T-113,Roseland/Michigan,105th/Vincennes,From,3666600,Invest South West Program
+T-113,Roseland/Michigan,119th/Halsted,From,2333400,Invest South West Program
+T-113,Roseland/Michigan,North Pullman,To,-160000,RDA - Whole Foods Distribution
+T-149,Stevenson/Brighton,Midway Ind. Corr.,From,6000000,Park District headquarters
+T-054,Stony Island Avenue Commercial and Burnside Industrial Corridors,North Pullman,To,-1500000,Gately Park
+T-171,West Woodlawn,Woodlawn,From,176000,Planning study
+T-171,West Woodlawn,Woodlawn,From,250000,SBIF
+T-084,Western Avenue North,Western Ave. South,From,5400000,Streetscape - Lawrence Av
+T-085,Western Avenue South,Western Ave. North,To,-5400000,Streetscape - Lawrence Av
+T-048,Western/Ogden,Roosevelt/Racine,To,-11333400,CHA Transformation project
+T-110,Wilson Yard,Montrose/Clarendon,To,-3450000,Park - Clarendon Park Fieldhouse
+T-065,Woodlawn,West Woodlawn,To,-250000,SBIF
+T-065,Woodlawn,West Woodlawn,To,-176000,Planning study

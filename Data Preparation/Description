@@ -1,0 +1,3 @@
+CensusIncome.ipynb  -  Google Colab notebook where initial data preparation was done for census tract data on median income by race.
+MidtermMaps.ipynb   -  Google Colab notebook where there is some data preparation on merging demographic data with geojson file for census tracts for mapping.
+TIF_Merging.ipynb   -  Google Colab notebook that shows the initial attempt at merging median income with TIF district by getting the average based on the overlap ratio between TIF districts and census tracts.

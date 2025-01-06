@@ -1,0 +1,103 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-001,35th/Halsted,Archer/Western,To,-1400000,Lighting
+T-001,35th/Halsted,Archer/Western,To,-600000,McGuane Park
+T-001,35th/Halsted,Archer/Western,To,-400000,McKinley Park
+T-001,35th/Halsted,Archer/Western,To,-200000,Park - Bosley Park
+T-005,60th and Western,63rd/Ashland,To,-800000,Lighting
+T-009,95th and Western,Western/Rock Island,From,1200000,Repay prior transfer
+T-033,North Branch (North),North Branch South,From,22000000,Bridge repairs
+T-034,North Branch (South),North Branch North,To,-22000000,Bridge repairs
+T-035,North-Cicero,Austin Commercial,To,-435000,Lighting
+T-035,North-Cicero,Austin Commercial,To,-3265000,Retail Thrive Zone
+T-037,River South,Canal/Congress,From,2000000,CPS - South Loop ES
+T-037,River South,Canal/Congress,From,8000000,Wells St - Roosevelt to Archer
+T-037,River South,24th/Michigan,To,-17000000,RDA - Ickes
+T-038,Roosevelt/Cicero,Harrison/Central,To,-144000,RDA - Loretto Hospital
+T-038,Roosevelt/Cicero,Ogden/Pulaski,To,-2070000,Lighting
+T-038,Roosevelt/Cicero,Ogden/Pulaski,To,-300000,Vertical clearance improvements
+T-042,Sanitary Drainage and Ship Canal,Little Village East,To,-1150000,Lighting
+T-042,Sanitary Drainage and Ship Canal,Little Village East,To,-130000,Street resurfacing
+T-048,Western/Ogden,Midwest,To,-2500000,RDA - Mt Sinai Hospital
+T-048,Western/Ogden,Roosevelt/Racine,To,-6000000,Addams-Medill Sports Center
+T-048,Western/Ogden,Roosevelt/Racine,To,-1350000,Lighting
+T-048,Western/Ogden,Roosevelt/Racine,To,-3000000,RDA - 1340 W Taylor Apts
+T-054,Stony Island Avenue Commercial and Burnside Industrial Corridors,71st/Stony Island,To,-3000000,MSAC DS - South Shore HS
+T-056,79th Street Corridor,79th/Vincennes,To,-1000000,Purchase Rehab Program
+T-060,71st/Stony Island,Stony Island/Burnside,From,3000000,MSAC DS - South Shore HS
+T-060,71st/Stony Island,Woodlawn,From,5000000,MSAC DS - South Shore HS
+T-061,Bronzeville,47th/King,From,1400000,Dunbar Park
+T-061,Bronzeville,47th/King,From,3000000,Williams Park
+T-062,Roosevelt/Racine,Western/Ogden,From,6000000,Addams-Medill Sports Center
+T-062,Roosevelt/Racine,Western/Ogden,From,1350000,Lighting
+T-062,Roosevelt/Racine,Western/Ogden,From,3000000,RDA - 1340 W Taylor Apts
+T-063,Canal/Congress,LaSalle Central,From,2575200,Viaduct improvements
+T-063,Canal/Congress,River South,To,-2000000,CPS - South Loop ES
+T-063,Canal/Congress,River South,To,-8000000,Wells St - Roosevelt to Archer
+T-064,Northwest Industrial Corridor,Madison/Austin,To,-180000,Traffic safety improvements
+T-065,Woodlawn,71st/Stony Island,To,-5000000,MSAC DS - South Shore HS
+T-065,Woodlawn,West Woodlawn,To,-800000,Lighting
+T-065,Woodlawn,West Woodlawn,To,-250000,SBIF
+T-072,24th/Michigan,River South,From,17000000,RDA - Ickes
+T-073,111th Street/Kedzie Avenue Business District,Western/Rock Island,To,-1000000,Morgan Park Sports Center
+T-074,Clark Street and Ridge Avenue,Devon/Sheridan,From,3111800,Repay prior transfer
+T-075,Madison/Austin Corridor,Northwest Ind. Corr.,From,180000,Traffic safety improvements
+T-075,Madison/Austin Corridor,Harrison/Central,To,-144000,RDA - Loretto Hospital
+T-076,Devon/Western,Western Ave. North,From,1800000,Lighting
+T-076,Devon/Western,Touhy/Western,To,-1788900,MSAC DS - 2010 - West Ridge Elementary
+T-084,Western Avenue North,Western Ave. South,From,2850000,Streetscape - Lawrence Av
+T-084,Western Avenue North,Devon/Western,To,-1800000,Lighting
+T-084,Western Avenue North,Foster/California,To,-366700,RDA - Swedish Covenant Hospital
+T-085,Western Avenue South,Western Ave. North,To,-2850000,Streetscape - Lawrence Av
+T-089,Midway Industrial Corridor,Stevenson/Brighton,To,-4500000,Park District headquarters
+T-095,Midwest,Western/Ogden,From,2500000,RDA - Mt Sinai Hospital
+T-097,51st/Archer,63rd/Pulaski,From,1000000,MSAC DS - Hernandez MS
+T-098,63rd/Pulaski,51st/Archer,To,-1000000,MSAC DS - Hernandez MS
+T-103,Lake Calumet Area Industrial,Commercial Ave.,From,425000,Sidewalk improvements
+T-106,Englewood Neighborhood,Washington Park,To,-1587500,RDA - Life Center Artists Residences
+T-109,Lawrence/Broadway,Hollywood/Sheridan,To,-575800,RDA - Hollywood House
+T-111,105th/Vincennes,119th/I-57,From,706800,RDA - Renaissance Beverly Ridge
+T-113,Roseland/Michigan,North Pullman,To,-473300,RDA - Whole Foods Distribution
+T-116,Lawrence/Pulaski,Irving Park/Elston,To,-200000,Lighting
+T-118,47th/King Drive,Bronzeville,To,-1400000,Dunbar Park
+T-118,47th/King Drive,Bronzeville,To,-3000000,Williams Park
+T-121,47th/Halsted,Washington Park,To,-1587500,RDA - Life Center Artists Residences
+T-125,119th/I-57,105th/Vincennes,To,-706800,RDA - Renaissance Beverly Ridge
+T-127,87th/Cottage Grove,73rd/University,From,750000,Retail Thrive Zone
+T-128,Commercial Avenue,Lake Calumet,To,-425000,Sidewalk improvements
+T-134,Devon/Sheridan,Clark/Ridge,To,-3111800,Repay prior transfer
+T-142,Western Avenue/Rock Island,111th/Kedzie,From,1000000,Morgan Park Sports Center
+T-142,Western Avenue/Rock Island,95th/Western,To,-1200000,Repay prior transfer
+T-143,63rd/Ashland,60th/Western,From,800000,Lighting
+T-143,63rd/Ashland,67th/Wentworth,To,-570000,Retail Thrive Zone
+T-144,Harrison/Central,Madison/Austin,From,144000,RDA - Loretto Hospital
+T-144,Harrison/Central,Roosevelt/Cicero,From,144000,RDA - Loretto Hospital
+T-145,73rd/University,87th/Cottage Grove,To,-750000,Retail Thrive Zone
+T-146,Touhy/Western,Devon/Western,From,1788900,MSAC DS - 2010 - West Ridge Elementary
+T-147,LaSalle Central,Randolph/Wells,From,639400,RDA - Randolph Tower
+T-147,LaSalle Central,Canal/Congress,To,-2575200,Viaduct improvements
+T-149,Stevenson/Brighton,Midway Ind. Corr.,From,4500000,Park District headquarters
+T-149,Stevenson/Brighton,Little Village,To,-570000,Lighting
+T-150,Addison South,Diversey Chicago River,To,-176000,Lighting
+T-152,Little Village Industrial Corridor,Stevenson/Brighton,From,570000,Lighting
+T-155,79th/Vincennes,79th Street Corridor,From,1000000,Purchase Rehab Program
+T-156,Austin Commercial,North/Cicero,From,435000,Lighting
+T-156,Austin Commercial,North/Cicero,From,3265000,Retail Thrive Zone
+T-157,Hollywood/Sheridan,Lawrence/Broadway,From,575800,RDA - Hollywood House
+T-161,Ogden/Pulaski,Roosevelt/Cicero,From,2070000,Lighting
+T-161,Ogden/Pulaski,Roosevelt/Cicero,From,300000,Vertical clearance improvements
+T-163,Archer/Western,35th/Halsted,From,1400000,Lighting
+T-163,Archer/Western,35th/Halsted,From,600000,McGuane Park
+T-163,Archer/Western,35th/Halsted,From,400000,McKinley Park
+T-163,Archer/Western,35th/Halsted,From,200000,Park - Bosley Park
+T-164,Little Village East,Sanitary & Ship Canal,From,1150000,Lighting
+T-164,Little Village East,Sanitary & Ship Canal,From,130000,Street resurfacing
+T-165,Irving Park/Elston,Lawrence/Pulaski,From,200000,Lighting
+T-166,North Pullman,Roseland/Michigan,From,473300,RDA - Whole Foods Distribution
+T-171,West Woodlawn,Woodlawn,From,800000,Lighting
+T-171,West Woodlawn,Woodlawn,From,250000,SBIF
+T-172,Randolph/Wells,LaSalle Central,To,-639400,RDA - Randolph Tower
+T-174,67th/Wentworth,63rd/Ashland,From,570000,Retail Thrive Zone
+T-177,Foster/California,Western Ave. North,From,366700,RDA - Swedish Covenant Hospital
+T-178,Washington Park,47th/Halsted,From,1587500,RDA - Life Center Artists Residences
+T-178,Washington Park,Englewood Neighborhood,From,1587500,RDA - Life Center Artists Residences
+T-179,Diversey Chicago River,Addison South,From,176000,Lighting

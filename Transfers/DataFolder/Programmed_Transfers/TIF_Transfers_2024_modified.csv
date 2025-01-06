@@ -1,0 +1,51 @@
+,Unnamed: 0,TIF Number,TIF1,TIF2,Direction,Amount,Project
+0,0,T-111,105th/Vincennes,Roseland/Michigan,To,-1833300,Invest South West Program
+1,1,T-176,107th/Halsted,119th/I-57,From,1400000,Invest South West Program
+2,2,T-114,119th and Halsted,Roseland/Michigan,To,-1166700,Invest South West Program
+3,3,T-125,119th/I-57,107th/Halsted,To,-1400000,Invest South West Program
+4,4,T-117,47th/Ashland,47th/Halsted,From,6833300,Invest South West Program
+5,5,T-121,47th/Halsted,47th/Ashland,To,-6833300,Invest South West Program
+6,6,T-174,67th/Wentworth,87th/Cottage Grove,From,750000,SBIF
+7,7,T-060,71st/Stony Island,87th/Cottage Grove,From,750000,Invest South West Program
+8,8,T-060,71st/Stony Island,Avalon Park/South Shore,To,-5003600,Invest South West Program
+9,9,T-056,79th Street Corridor,79th Street/Southwest Highway,From,7533400,Invest South West Program
+10,10,T-056,79th Street Corridor,79th/Vincennes,From,1000000,Invest South West Program
+12,12,T-112,79th Street/Southwest Highway,79th Street Corridor,To,-7533400,Invest South West Program
+13,13,T-155,79th/Vincennes,79th Street Corridor,To,-1000000,Invest South West Program
+14,14,T-127,87th/Cottage Grove,67th/Wentworth,To,-750000,SBIF
+15,15,T-127,87th/Cottage Grove,71st/Stony Island,To,-750000,Invest South West Program
+16,16,T-156,Austin Commercial,Northwest Industrial Corridor,From,5800000,Invest South West Program
+17,17,T-123,Avalon Park/South Shore,71st/Stony Island,From,5003600,Invest South West Program
+18,18,T-081,Belmont/Central,Diversey/Narragansett,To,-9000000,Riis Park
+19,19,T-063,Canal/Congress,Roosevelt Clark,To,-24285800,Infra-Structure - Roosevelt Clark TIF
+20,20,T-115,Chicago/Central Park,Kinzie Industrial Corridor,From,6500000,Invest South West Program
+21,21,T-128,Commercial Avenue,South Chicago,From,1050000,Invest South West Program
+22,22,T-129,Diversey/Narragansett,Belmont/Central,From,9000000,Riis Park
+23,23,T-021,Englewood Mall,Englewood Neighborhood,From,1800000,Invest South West Program
+24,24,T-106,Englewood Neighborhood,Englewood Mall,To,-1800000,Invest South West Program
+25,25,T-108,Humboldt Park Commercial,Pulaski Corridor,To,-6000000,Invest South West Program
+26,26,T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-6500000,Invest South West Program
+27,27,T-075,Madison/Austin Corridor,Midwest,From,2000000,Invest South West Program
+28,28,T-075,Madison/Austin Corridor,Northwest Industrial Corridor,From,6000000,Invest South West Program
+29,29,T-095,Midwest,Madison/Austin Corridor,To,-2000000,Invest South West Program
+30,30,T-095,Midwest,Ogden/Pulaski,To,-1780000,Invest South West Program
+31,31,T-095,Midwest,Ogden/Pulaski,To,-1700000,RDA - Grace Manor Apts
+32,32,T-173,Montrose/Clarendon,Wilson Yard,From,3450000,Park - Clarendon Park Fieldhouse
+33,33,T-166,North Pullman,Roseland/Michigan,From,155000,RDA - Whole Foods Distribution
+34,34,T-064,Northwest Industrial Corridor,Austin Commercial,To,-5800000,Invest South West Program
+35,35,T-064,Northwest Industrial Corridor,Madison/Austin Corridor,To,-6000000,Invest South West Program
+36,36,T-161,Ogden/Pulaski,Midwest,From,1780000,Invest South West Program
+37,37,T-161,Ogden/Pulaski,Midwest,From,1700000,RDA - Grace Manor Apts
+38,38,T-161,Ogden/Pulaski,Roosevelt/Cicero,From,4000000,Invest South West Program
+39,39,T-069,Pulaski Corridor,Humboldt Park Commercial,From,6000000,Invest South West Program
+40,40,T-184,Roosevelt Clark,Canal/Congress,From,24285800,Infra-Structure - Roosevelt Clark TIF
+41,41,T-038,Roosevelt/Cicero,Ogden/Pulaski,To,-4000000,Invest South West Program
+42,42,T-062,Roosevelt/Racine,Western/Ogden,From,5666700,CHA Transformation project
+43,43,T-113,Roseland/Michigan,105th/Vincennes,From,1833300,Invest South West Program
+44,44,T-113,Roseland/Michigan,119th and Halsted,From,1166700,Invest South West Program
+45,45,T-113,Roseland/Michigan,North Pullman,To,-155000,RDA - Whole Foods Distribution
+46,46,T-093,South Chicago,Commercial Avenue,To,-1050000,Invest South West Program
+47,47,T-084,Western Avenue North,Western Avenue South,From,5100000,Streetscape - Lawrence Av
+48,48,T-085,Western Avenue South,Western Avenue North,To,-5100000,Streetscape - Lawrence Av
+49,49,T-048,Western/Ogden,Roosevelt/Racine,To,-5666700,CHA Transformation project
+50,50,T-110,Wilson Yard,Montrose/Clarendon,To,-3450000,Park - Clarendon Park Fieldhouse

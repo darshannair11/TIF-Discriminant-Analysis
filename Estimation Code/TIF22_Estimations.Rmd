@@ -1,0 +1,712 @@
+```{r}
+setwd("/Users/jthomason/Desktop/DS480Rmd")
+tif22 <- read.csv("census_tif_merge.csv", header=TRUE)
+tif22 <- tif22[, -c(1:9)]
+```
+
+```{r}
+tif22 <- tif22[,c(1,3,4,5,6,15,16,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33)]
+```
+
+```{r}
+# Convert intersection_ratio to numeric, removing non-numeric characters
+tif22$intersection_ratio <- as.numeric(gsub("[^0-9.]", "", as.character(tif22$intersection_ratio)))
+
+# Check again for conversion issues
+sum(is.na(tif22$intersection_ratio))
+
+# Removing rows where intersection_ratio is less than 0.05
+tif22 <- tif22[tif22$intersection_ratio >= 0.05, ]
+
+# Changing intersection_ratio values greater than 0.95 to 1
+tif22$intersection_ratio[tif22$intersection_ratio > 0.95] <- 1
+
+tif22 <- tif22[!is.na(tif22$intersection_ratio), ]
+
+tif22[2:5] <- sapply(tif22[2:5], function(x) as.numeric(as.character(x)))
+# Count NAs in each of the columns 2 to 5
+na_counts <- sapply(tif22[2:5], function(x) sum(is.na(x)))
+
+tif22 <- tif22[!apply(is.na(tif22[, 2:5]), 1, any), ]
+
+tif22_eval <- tif22
+```
+
+```{r}
+print(tif22_eval)
+```
+
+
+```{r}
+write.csv(tif22, "tracts_in_tif.csv", row.names = FALSE)
+```
+
+```{r}
+# Extract unique values from the 'tif_name' column in tif22
+unique_tif_names <- unique(tif22$TIF.bound)
+
+# Create a new dataframe
+# The number of rows is equal to the length of unique_tif_names
+# Initialize other columns (2 to 5) with default values or NA
+tif_estimates <- data.frame(
+  tif_name = unique_tif_names,
+  hisp_latin_pop_est = NA,  # Replace NA with default values as needed
+  white_pop_est = NA,  # Replace NA with default values as needed
+  black_pop_est = NA,  # Replace NA with default values as needed
+  asian_pop_est = NA   # Replace NA with default values as needed
+)
+
+# Print the new dataframe to view its structure
+tif_estimates <- tif_estimates[-5,]
+
+for (i in seq_len(nrow(tif_estimates))) {
+  # Extract the current tif_name
+  current_tif_name <- tif_estimates$tif_name[i]
+  
+  # Subset tif22 where tif_name matches the current tif_name
+  matching_rows <- tif22[tif22$tif_name == current_tif_name, ]
+  
+  # Calculate the sum of the product of intersection_ratio and Hispanic.or.Latin.Pop..Est.
+  # for the matching rows
+  sp1hl <- sum(matching_rows$intersection_ratio * matching_rows$Hispanic.or.Latin.Pop..Est.)
+  sp2w <- sum(matching_rows$intersection_ratio * matching_rows$White..Not.Hispanic.or.Latin..Pop..Est.)
+  sp3baa <- sum(matching_rows$intersection_ratio * matching_rows$Black.or.African.American.Pop..Est.)
+  sp4a <- sum(matching_rows$intersection_ratio * matching_rows$Asian.Pop..Est.)
+  
+  # Assign the calculated sum to the new column in the corresponding row of tif_estimates
+  tif_estimates$hisp_latin_pop_est[i] <- round(sp1hl, digits = 0)
+  tif_estimates$white_pop_est[i] <- round(sp2w, digits = 0)
+  tif_estimates$black_pop_est[i] <- round(sp3baa, digits = 0)
+  tif_estimates$asian_pop_est[i] <- round(sp4a, digits = 0)
+}
+```
+
+```{r}
+write.csv(tif_estimates, "tif_demographic_estimates.csv", row.names = FALSE)
+```
+
+```{r}
+ct22_income <- read.csv("ct22_income.csv", header=TRUE, stringsAsFactors = FALSE)
+# Columns to keep (retaining the original structure)
+cols_to_keep <- grep("Occupied.housing.units..Estimate", names(ct22_income), value = TRUE)
+
+# Ensure the first column is also kept
+cols_to_keep <- unique(c(names(ct22_income)[1], cols_to_keep))
+
+# Subset the dataframe to keep only the desired columns
+ct22_income <- ct22_income[, cols_to_keep]
+ct22_income <- ct22_income[1:14,]
+ct22_income <- ct22_income[-c(2,14),]
+
+# Setting the label for the row that will hold the tract numbers
+ct22_income[13, 1] <- "Census Tract Number"
+
+# Extract the census tract number from the column names
+extract_tract_number <- function(col_name) {
+  # Use a regex to extract the census tract number
+  pattern <- "Census.Tract.(.*)..Cook.County..Illinois..Occupied.housing.units..Estimate"
+  tract_number <- sub(pattern, "\\1", col_name)
+  return(tract_number)
+}
+
+# Apply the extraction function to each column name (except the first column)
+tract_numbers <- sapply(names(ct22_income)[-1], extract_tract_number)
+
+# Store the tract numbers in the 13th row
+ct22_income[13, -1] <- tract_numbers
+# Extract the census tract numbers from the first column of tif22
+census_tracts_tif22 <- as.character(tif22[, 1])
+
+# Extract the census tract numbers from the 13th row of ct22_income, excluding the first column
+census_tracts_ct22 <- as.character(ct22_income[13, -1])
+
+# Find indices of columns in ct22_income (excluding the first) where the census tract number matches one from tif22
+columns_to_keep <- which(census_tracts_ct22 %in% census_tracts_tif22)
+
+# Since we've removed the first column, adjust for the index offset by adding 1
+columns_to_keep <- columns_to_keep + 1
+
+# Include the first column of ct22_income and the filtered columns
+columns_to_keep <- c(1, columns_to_keep)
+
+# Create a new dataframe keeping only the desired columns
+ct22_income_filtered <- ct22_income[, columns_to_keep]
+# Check for non-numeric characters or inconsistencies
+for (col in 2:ncol(ct22_income_filtered)) {
+  # Examine each row (excluding the first and 13th) for unexpected data
+  for (row in 1:nrow(ct22_income_filtered)) {
+    if (row == 13) {
+      next  # Skip the 13th row
+    }
+
+    # Clean the value by removing commas and spaces
+    clean_value <- gsub(",", "", ct22_income_filtered[row, col])
+    clean_value <- gsub(" ", "", clean_value)
+
+    # Convert to numeric and check for NA
+    numeric_value <- suppressWarnings(as.numeric(clean_value))
+
+    # If conversion fails, print a diagnostic message
+    if (is.na(numeric_value)) {
+      print(paste("Conversion failed for row", row, "and column", col, ": '", clean_value, "'"))
+    } else {
+      ct22_income_filtered[row, col] = numeric_value
+    }
+  }
+}
+
+```
+
+```{r}
+# Define a function to clean and convert values to numeric
+clean_and_convert <- function(df) {
+  # Loop through each column and convert to numeric after removing commas and spaces
+  for (i in 1:ncol(df)) {
+    df[, i] <- suppressWarnings(as.numeric(gsub(",", "", df[, i])))  # Clean and convert
+  }
+  return(df)  # Return the converted dataframe
+}
+
+# Apply the function to convert the required rows to numeric
+cleaned_2_3 <- clean_and_convert(ct22_income_filtered[2:3, -1])
+cleaned_4_6 <- clean_and_convert(ct22_income_filtered[4:6, -1])
+cleaned_7_8 <- clean_and_convert(ct22_income_filtered[7:8, -1])
+
+# Calculate the sum for the desired rows
+under_10k_sum <- colSums(cleaned_2_3, na.rm = TRUE)
+ten_to_25k_sum <- colSums(cleaned_4_6, na.rm = TRUE)
+twentyfive_to_50k_sum <- colSums(cleaned_7_8, na.rm = TRUE)
+
+# Create new rows with appropriate titles and calculated sums
+under_10k <- c("Under 10k", under_10k_sum)
+ten_to_25k <- c("10-25k", ten_to_25k_sum)
+twentyfive_to_50k <- c("25-50k", twentyfive_to_50k_sum)
+# Initialize with the title
+under_10k_vector <- c("Under 10k")
+
+# Extract only the numeric values from under_10k (excluding the title)
+numeric_values <- gsub("[^0-9]", "", under_10k[-1])
+
+# Convert extracted values to numeric
+numeric_values <- as.numeric(numeric_values)
+
+# Combine the title with the numeric values to create a row vector
+under_10k_vector <- c(under_10k_vector, numeric_values)
+
+# Display the row vector
+```
+
+```{r}
+# Convert ten_to_25k to a clean row vector
+ten_to_25k_vector <- c("10-25k")  # Initialize with the title
+
+# Extract only the numeric values (excluding the title)
+numeric_values <- gsub("[^0-9]", "", ten_to_25k[-1])
+
+# Convert extracted values to numeric
+numeric_values <- as.numeric(numeric_values)
+
+# Combine the title with the numeric values to create a row vector
+ten_to_25k_vector <- c(ten_to_25k_vector, numeric_values)
+
+
+
+# Convert twentyfive_to_50k to a clean row vector
+twentyfive_to_50k_vector <- c("25-50k")  # Initialize with the title
+
+# Extract only the numeric values (excluding the title)
+numeric_values <- gsub("[^0-9]", "", twentyfive_to_50k[-1])
+
+# Convert extracted values to numeric
+numeric_values <- as.numeric(numeric_values)
+
+# Combine the title with the numeric values to create a row vector
+twentyfive_to_50k_vector <- c(twentyfive_to_50k_vector, numeric_values)
+ct22_income_filtered[14,] <- under_10k_vector
+ct22_income_filtered[15,] <- ten_to_25k_vector
+ct22_income_filtered[16,] <- twentyfive_to_50k_vector
+ct22_income_filtered[17,] <- ct22_income_filtered[9,]
+ct22_income_filtered[17,1] <- "50-75k"
+ct22_income_filtered[18,] <- ct22_income_filtered[10,]
+ct22_income_filtered[18,1] <- "75-100k"
+
+ct22_income_filtered[19,] <- ct22_income_filtered[11,]
+ct22_income_filtered[19,1] <- "100-150k"
+
+ct22_income_filtered[20,] <- ct22_income_filtered[12,]
+ct22_income_filtered[20,1] <- "150k+"
+ct22_income_filtered <- ct22_income_filtered[-c(1:12),]
+# Extract the new column labels from the first row of ct22_income_filtered
+new_column_labels <- as.character(ct22_income_filtered[1, ])
+
+# Set the new column names
+names(ct22_income_filtered) <- new_column_labels
+
+# Remove the first row (used for new column labels)
+ct22_income_filtered <- ct22_income_filtered[-1, ]
+
+```
+
+
+```{r}
+print(ct22_income_filtered)
+```
+
+```{r}
+tif22_income <- tif22[,c(1,6,7)]
+```
+
+```{r}
+tif22_income$col_1 <- NA
+tif22_income$col_2 <- NA
+tif22_income$col_3 <- NA
+tif22_income$col_4 <- NA
+tif22_income$col_5 <- NA
+tif22_income$col_6 <- NA
+tif22_income$col_7 <- NA
+```
+
+```{r}
+# Assuming you have already created the dataframes
+# "tif22_income" and "ct22_income_filtered"
+
+# Loop through each column in ct22_income_filtered except the first one
+for (col_name in colnames(ct22_income_filtered)[-1]) {
+  # Find the row in tif22_income where Census.Tract matches the current column name
+  match_row <- which(tif22_income$`Census.Tract` == col_name)
+  
+  # Check if there's a match
+  if (length(match_row) > 0) {
+    # Get the values from the corresponding column in ct22_income_filtered
+    new_values <- ct22_income_filtered[[col_name]][1:7]
+    
+    # Assign the values to the corresponding row in tif22_income
+    tif22_income[match_row, paste0("col_", 1:7)] <- new_values
+  }
+}
+```
+
+```{r}
+# Your original column labels
+old_labels <- paste0("col_", 1:7)
+
+# Your new desired column labels
+new_labels <- c("Under 10k", "10-25k", "25-50k", "50-75k", "75-100k", "100-150k", "150k+")
+
+# Change column names using colnames()
+colnames(tif22_income)[colnames(tif22_income) %in% old_labels] <- new_labels
+
+print(tif22_income)
+```
+```{r}
+tif_estimates$col_6 <- NA
+tif_estimates$col_7 <- NA
+tif_estimates$col_8 <- NA
+tif_estimates$col_9 <- NA
+tif_estimates$col_10 <- NA
+tif_estimates$col_11 <- NA
+tif_estimates$col_12 <- NA
+```
+
+```{r}
+old_labels <- paste0("col_", 6:12)
+
+# Your new desired column labels
+new_labels <- c("Under 10k", "10-25k", "25-50k", "50-75k", "75-100k", "100-150k", "150k+")
+
+# Change column names using colnames()
+colnames(tif_estimates)[colnames(tif_estimates) %in% old_labels] <- new_labels
+
+print(tif_estimates)
+```
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif_estimates and tif22_income dataframes are already loaded
+
+# Define the income column labels
+income_columns <- c("Under 10k", "10-25k", "25-50k", "50-75k", "75-100k", "100-150k", "150k+")
+
+# Loop through each row in tif_estimates
+for (i in seq_len(nrow(tif_estimates))) {
+  # Get the current tif_name
+  current_tif_name <- tif_estimates$tif_name[i]
+  
+  # Find all rows in tif22_income where TIF.bound matches current_tif_name
+  matching_rows <- tif22_income[tif22_income$TIF.bound == current_tif_name, ]
+  
+  # Loop through each income column and calculate the sum of the product of the value
+  # in the income column and intersection_ratio for all matching rows
+  for (income_col in income_columns) {
+    # Convert income column values to numeric
+    income_values <- as.numeric(matching_rows[[income_col]])
+    
+    # Convert intersection_ratio to numeric
+    intersection_ratios <- as.numeric(matching_rows$intersection_ratio)
+    
+    # Calculate the sum of the product of the specified income column and intersection_ratio
+    product_sum <- sum(income_values * intersection_ratios)
+    
+    # Assign the rounded sum to the corresponding column in tif_estimates
+    tif_estimates[i, income_col] <- round(product_sum, digits = 0)
+  }
+}
+
+# Display the updated tif_estimates
+print(tif_estimates)
+
+```
+```{r}
+tif_estimates$cumulative <- NA
+tif_estimates$median <- NA
+tif_estimates$left_bound <- NA
+tif_estimates$right_bound <- NA
+tif_estimates$left_bound_source <- NA
+tif_estimates$fractional_position <- NA
+tif_estimates$lrv <- NA
+tif_estimates$rrv <- NA
+tif_estimates$median_income <- NA
+```
+
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif_estimates dataframe is already loaded
+
+# Define the income column labels
+income_columns <- c("Under 10k", "10-25k", "25-50k", "50-75k", "75-100k", "100-150k", "150k+")
+
+# Loop through each row in tif_estimates
+for (i in seq_len(nrow(tif_estimates))) {
+  # Calculate the cumulative sum for the specified income columns
+  cumulative_sum <- sum(as.numeric(tif_estimates[i, income_columns]), na.rm = TRUE)
+  
+  # Store the cumulative sum in the "cumulative" column
+  tif_estimates$cumulative[i] <- cumulative_sum
+  
+  # Calculate the median (rounded value of cumulative sum divided by 2)
+  median_value <- round(cumulative_sum / 2)
+  
+  # Store the median value in the "median" column
+  tif_estimates$median[i] <- median_value
+  
+  # Initialize cumulative, left_bound, right_bound, and left_bound_source
+  cumulative = 0
+  left_bound = 0
+  right_bound = 0
+  left_bound_source = NULL
+  
+  # Find the left and right bounds and indicate the column for the left bound
+  for (j in seq_along(income_columns)) {
+    # Get the value from the current column
+    current_value = as.numeric(tif_estimates[i, income_columns[j]])
+    
+    # Update the cumulative sum
+    cumulative <- cumulative + current_value
+    
+    # Check if the median is within this interval
+    if (cumulative >= median_value) {
+      # Left bound is the sum without the current column
+      left_bound = cumulative - current_value
+      
+      # Right bound is the current cumulative sum
+      right_bound = cumulative
+      
+      # Record the column that contributed to the left bound
+      left_bound_source = income_columns[j - 1]
+      
+      # Break the loop once the bounds are found
+      break
+    }
+  }
+  
+  # Store the left and right bounds and the source of the left bound
+  tif_estimates$left_bound[i] <- left_bound
+  tif_estimates$right_bound[i] <- right_bound
+  tif_estimates$left_bound_source[i] <- left_bound_source
+}
+
+# Display the updated tif_estimates
+print(tif_estimates)
+
+```
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif_estimates dataframe is already loaded
+
+# Extract the row where 'left_bound_source' is "100-150k"
+row_with_100_150k_source <- tif_estimates[tif_estimates$left_bound_source == "100-150k", ]
+
+# Save the extracted row as a vector
+vector_with_100_150k_source <- as.vector(t(row_with_100_150k_source))
+
+# Remove the row from the dataframe
+tif_estimates <- tif_estimates[tif_estimates$left_bound_source != "100-150k", ]
+```
+
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif_estimates dataframe is already loaded and contains a 'left_bound_source' column
+
+# Define a function to determine lrv and rrv based on the left_bound_source
+get_range_values <- function(source) {
+  lrv <- NULL
+  rrv <- NULL
+  
+  if (source == "Under 10k") {
+    lrv <- 10
+    rrv <- 25
+  } else if (source == "10-25k") {
+    lrv <- 25
+    rrv <- 50
+  } else if (source == "25-50k") {
+    lrv <- 50
+    rrv <- 75
+  } else if (source == "50-75k") {
+    lrv <- 75
+    rrv <- 100
+  } else if (source == "75-100k") {
+    lrv <- 100
+    rrv <- 150
+  } else {
+    # Default values if there's no recognized source
+    lrv <- NA
+    rrv <- NA
+  }
+  
+  return(list("lrv" = lrv, "rrv" = rrv))
+}
+
+# Loop through each row in tif_estimates to assign lrv and rrv based on left_bound_source
+for (i in seq_len(nrow(tif_estimates))) {
+  source <- tif_estimates$left_bound_source[i]
+  
+  # Get lrv and rrv using the custom function
+  range_values <- get_range_values(source)
+  
+  # Assign the values to the appropriate columns
+  tif_estimates$lrv[i] <- range_values$lrv
+  tif_estimates$rrv[i] <- range_values$rrv
+}
+
+# Display the updated tif_estimates
+print(tif_estimates)
+```
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif_estimates dataframe is already loaded and has 'median', 'left_bound', and 'right_bound' columns
+
+# Calculate fractional_position for each row
+tif_estimates$fractional_position <- (tif_estimates$median - tif_estimates$left_bound) / 
+                                     (tif_estimates$right_bound - tif_estimates$left_bound)
+
+# Display the updated dataframe with fractional_position
+```
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif_estimates dataframe is already loaded and has 'fractional_position', 'lrv', and 'rrv' columns
+
+# Calculate median_income for each row
+tif_estimates$median_income <- 1000 * (tif_estimates$fractional_position * (tif_estimates$rrv - tif_estimates$lrv) + tif_estimates$lrv)
+
+# Display the updated dataframe with median_income
+print(tif_estimates)
+```
+
+```{r}
+tif22_finance <- tif22_eval[, c("TIF.bound", "transfers_in", "transfers_out")]
+tif22_tax <- tif22_eval[, c("TIF.bound","cumulative_property_tax_extraction")]
+```
+
+```{r}
+print(tif22_finance)
+```
+```{r}
+tif22_finance <- tif22_finance[!duplicated(tif22_finance$TIF.bound), ]
+```
+
+```{r}
+tif22_tax <- tif22_tax[!duplicated(tif22_tax$TIF.bound),]
+```
+
+```{r}
+tif22_tax <- tif22_tax[tif22_tax$cumulative_property_tax_extraction != "", ]
+```
+
+```{r}
+print(tif22_tax)
+```
+
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif22_finance dataframe is already loaded
+
+# Keep rows where 'transfers_in' and 'transfers_out' are not NA
+tif22_no_na <- tif22_finance[!is.na(tif22_finance$transfers_in) & !is.na(tif22_finance$transfers_out), ]
+
+# Display the dataframe after removing rows with NA in 'transfers_in' or 'transfers_out'
+print(tif22_no_na)
+
+```
+
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif22_finance dataframe is already loaded
+
+# Keep rows where 'transfers_in' and 'transfers_out' are not empty strings
+tif22_no_empty <- tif22_finance[tif22_finance$transfers_in != "" & tif22_finance$transfers_out != "", ]
+
+# Display the dataframe after removing rows with empty strings in 'transfers_in' or 'transfers_out'
+print(tif22_no_empty)
+```
+```{r}
+# Ensure the necessary dataframes are loaded
+# Assuming tif22_no_empty dataframe is already loaded
+
+# Create the 'fact_of_transfer' column based on the conditions
+tif22_no_empty$fact_of_transfer <- ifelse(tif22_no_empty$transfers_in == 0 & tif22_no_empty$transfers_out == 0, 0,
+                                          ifelse(tif22_no_empty$transfers_in != 0 & tif22_no_empty$transfers_out == 0, 1,
+                                                 ifelse(tif22_no_empty$transfers_in == 0 & tif22_no_empty$transfers_out != 0, -1,
+                                                        ifelse(tif22_no_empty$transfers_in > tif22_no_empty$transfers_out, 1, -1)
+                                                 )
+                                          )
+                                     )
+
+# Display the updated dataframe with the new 'fact_of_transfer' column
+print(tif22_no_empty)
+```
+
+```{r}
+tif22_treg <- tif22_tax
+```
+
+
+
+```{r}
+tif22_reg <- tif22_no_empty[,c("TIF.bound","fact_of_transfer")]
+tif_reg_est <- tif_estimates
+```
+
+```{r}
+tif_reg_est <- tif_reg_est[,c(1,2,3,4,5,21)]
+```
+
+```{r}
+ftre2 <- tif_reg_est[tif_reg_est[[1]] %in% tif22_treg[[1]], ]
+```
+
+```{r}
+print(tif22_treg)
+```
+
+```{r}
+ftre2$cpte <- tif22_tax$cumulative_property_tax_extraction
+```
+
+```{r}
+write.csv(ftre2, "tif_estimated_median_income.csv", row.names = FALSE)
+```
+
+```{r}
+# Filter tif_reg_est to keep rows where 'col1' is in 'tif22_reg'
+filtered_tif_reg_est <- tif_reg_est[tif_reg_est[[1]] %in% tif22_reg[[1]], ]
+```
+```{r}
+filtered_tif_reg_est$fact_of_transfer <- tif22_no_empty$fact_of_transfer
+```
+
+```{r}
+ftre <- filtered_tif_reg_est
+```
+
+```{r}
+library(nnet)
+
+# Assuming your dataframe is 'ftre', with 'median_income' as the continuous predictor (x)
+# and 'fact_of_transfer' as the categorical response (y)
+# Ensure that 'fact_of_transfer' is treated as a factor
+ftre$fact_of_transfer <- as.factor(ftre$fact_of_transfer)
+
+# Fit the multinomial logistic regression model
+model <- multinom(fact_of_transfer ~ median_income, data = ftre)
+
+# View the model summary to inspect coefficients and other model parameters
+summary(model)
+```
+```{r}
+library(ggplot2)
+library(tidyr)  # For reshaping data
+
+# Create a sequence of values for 'median_income' to predict over
+income_range <- data.frame(median_income = seq(min(ftre$median_income), max(ftre$median_income), length.out = 100))
+
+# Predict probabilities for each category
+predictions <- predict(model, newdata = income_range, type = "probs")
+
+# Combine predictions with the corresponding 'median_income' values
+predictions_long <- cbind(income_range, predictions) %>%
+  gather(key = "Category", value = "Probability", -median_income)
+
+# Plot the predicted probabilities
+ggplot(predictions_long, aes(x = median_income, y = Probability, color = Category)) +
+  geom_line() +
+  labs(title = "Predicted Probabilities of Categories over Median Income",
+       x = "Median Income",
+       y = "Probability") +
+  theme_minimal()
+```
+
+```{r}
+# Load the necessary library for multinomial logistic regression
+library(nnet)
+
+# Convert 'fact_of_transfer' to a factor if it's not already
+ftre$fact_of_transfer <- as.factor(ftre$fact_of_transfer)
+
+# Fit the multinomial logistic regression model with multiple predictors
+multi_model <- multinom(fact_of_transfer ~ hisp_latin_pop_est + white_pop_est + black_pop_est + asian_pop_est, data = ftre)
+
+# View the model summary to understand the coefficients
+summary(multi_model)
+
+# Calculate p-values to check for statistical significance
+z_values <- summary(multi_model)$coefficients / summary(multi_model)$standard.errors
+p_values <- (1 - pnorm(abs(z_values))) * 2
+
+# Optional: Extract coefficients and standard errors
+coefficients <- summary(multi_model)$coefficients
+standard_errors <- summary(multi_model)$standard.errors
+
+# Display the summary, z-values, and p-values
+list(summary = summary(multi_model), z_values = z_values, p_values = p_values)
+
+```
+
+```{r}
+# Fit the linear regression model
+linear_model <- lm(cpte ~ median_income, data = ftre2)
+
+# Create a scatter plot with a new x-axis range
+plot(
+  ftre2$median_income, ftre2$cpte,
+  xlab = "Estimated Median Income (Thousands of Dollars)",  # X-axis label
+  ylab = "Cumulative Property Tax Extracted",  # Y-axis label
+  main = "Median Income of TIF versus Cumulative Property Tax Extracted 2022",  # Plot title
+  xlim = c(20000, 140000),  # New X-axis range
+  ylim = c(0, 10000000),  # Y-axis range
+  xaxt = "n",  # Custom tick marks for X-axis
+  yaxt = "n",  # Custom tick marks for Y-axis
+  pch = 19,  # Point character (filled circle)
+  col = "blue"  # Color of the points
+)
+
+# Custom tick marks for the X and Y axes
+axis(1, at = seq(20000, 140000, by = 10000), labels = TRUE)  # Custom tick marks on the X-axis
+axis(2, at = seq(0, 10000000, by = 500000), labels = TRUE)  # Custom tick marks on the Y-axis
+
+# Add the regression line
+abline(linear_model, col = "red")  # Red regression line
+
+```
+
+```{r}
+
+```

@@ -1,0 +1,52 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-111,105th/Vincennes,Roseland/Michigan,To,-1833300,Invest South West Program
+T-176,107th/Halsted,119th/I-57,From,1400000,Invest South West Program
+T-114,119th and Halsted,Roseland/Michigan,To,-1166700,Invest South West Program
+T-125,119th/I-57,107th/Halsted,To,-1400000,Invest South West Program
+T-117,47th/Ashland,47th/Halsted,From,6833300,Invest South West Program
+T-121,47th/Halsted,47th/Ashland,To,-6833300,Invest South West Program
+T-174,67th/Wentworth,87th/Cottage Grove,From,750000,SBIF
+T-060,71st/Stony Island,87th/Cottage Grove,From,750000,Invest South West Program
+T-060,71st/Stony Island,Avalon Park/South Shore,To,-5003600,Invest South West Program
+T-056,79th Street Corridor,79th/Southwest Hwy,From,7533400,Invest South West Program
+T-056,79th Street Corridor,79th/Vincennes,From,1000000,Invest South West Program
+T-056,79th Street Corridor,Greater SW Ind. Corr. East,From,2000000,Invest South West Program
+T-112,79th Street/Southwest Highway,79th Street Corridor,To,-7533400,Invest South West Program
+T-155,79th/Vincennes,79th Street Corridor,To,-1000000,Invest South West Program
+T-127,87th/Cottage Grove,67th/Wentworth,To,-750000,SBIF
+T-127,87th/Cottage Grove,71st/Stony Island,To,-750000,Invest South West Program
+T-156,Austin Commercial,Northwest Ind. Corr.,From,5800000,Invest South West Program
+T-123,Avalon Park/South Shore,71st/Stony Island,From,5003600,Invest South West Program
+T-081,Belmont/Central,Diversey/Narragansett,To,-9000000,Riis Park
+T-063,Canal/Congress,Roosevelt Clark,To,-24285800,Infra-Structure - Roosevelt Clark TIF
+T-115,Chicago/Central Park,Kinzie Ind. Corr.,From,6500000,Invest South West Program
+T-128,Commercial Avenue,South Chicago,From,1050000,Invest South West Program
+T-129,Diversey/Narragansett,Belmont/Central,From,9000000,Riis Park
+T-021,Englewood Mall,Englewood Neighborhood,From,1800000,Invest South West Program
+T-106,Englewood Neighborhood,Englewood Mall,To,-1800000,Invest South West Program
+T-108,Humboldt Park Commercial,Pulaski Corridor,To,-6000000,Invest South West Program
+T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-6500000,Invest South West Program
+T-075,Madison/Austin Corridor,Midwest,From,2000000,Invest South West Program
+T-075,Madison/Austin Corridor,Northwest Ind. Corr.,From,6000000,Invest South West Program
+T-095,Midwest,Madison/Austin,To,-2000000,Invest South West Program
+T-095,Midwest,Ogden/Pulaski,To,-1780000,Invest South West Program
+T-095,Midwest,Ogden/Pulaski,To,-1700000,RDA - Grace Manor Apts
+T-173,Montrose/Clarendon,Wilson Yard,From,3450000,Park - Clarendon Park Fieldhouse
+T-166,North Pullman,Roseland/Michigan,From,155000,RDA - Whole Foods Distribution
+T-064,Northwest Industrial Corridor,Austin Commercial,To,-5800000,Invest South West Program
+T-064,Northwest Industrial Corridor,Madison/Austin,To,-6000000,Invest South West Program
+T-161,Ogden/Pulaski,Midwest,From,1780000,Invest South West Program
+T-161,Ogden/Pulaski,Midwest,From,1700000,RDA - Grace Manor Apts
+T-161,Ogden/Pulaski,Roosevelt/Cicero,From,4000000,Invest South West Program
+T-069,Pulaski Corridor,Humboldt Park,From,6000000,Invest South West Program
+T-184,Roosevelt Clark,Canal/Congress,From,24285800,Infra-Structure - Roosevelt Clark TIF
+T-038,Roosevelt/Cicero,Ogden/Pulaski,To,-4000000,Invest South West Program
+T-062,Roosevelt/Racine,Western/Ogden,From,5666700,CHA Transformation project
+T-113,Roseland/Michigan,105th/Vincennes,From,1833300,Invest South West Program
+T-113,Roseland/Michigan,119th/Halsted,From,1166700,Invest South West Program
+T-113,Roseland/Michigan,North Pullman,To,-155000,RDA - Whole Foods Distribution
+T-093,South Chicago,Commercial Ave.,To,-1050000,Invest South West Program
+T-084,Western Avenue North,Western Ave. South,From,5100000,Streetscape - Lawrence Av
+T-085,Western Avenue South,Western Ave. North,To,-5100000,Streetscape - Lawrence Av
+T-048,Western/Ogden,Roosevelt/Racine,To,-5666700,CHA Transformation project
+T-110,Wilson Yard,Montrose/Clarendon,To,-3450000,Park - Clarendon Park Fieldhouse

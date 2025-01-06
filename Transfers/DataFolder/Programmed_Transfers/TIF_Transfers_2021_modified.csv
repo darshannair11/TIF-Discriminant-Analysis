@@ -1,0 +1,57 @@
+,TIF Number,TIF1,TIF2,Direction,Amount,Project
+0,T-182,116th Ave O,Lake Calumet Area Industrial,From,4512000,RDA - North Point
+1,T-097,51st/Archer,63rd/Pulaski,From,806000,MSAC DS - Hernandez MS
+2,T-098,63rd/Pulaski,51st/Archer,To,-806000,MSAC DS - Hernandez MS
+3,T-156,Austin Commercial,North-Cicero,From,3000000,Invest South West Program
+4,T-013,Bryn Mawr/Broadway,Red Purple Transit,From,15289300,Red Purple Modernization Transit TIF
+5,T-115,Chicago/Central Park,Kinzie Industrial Corridor,From,5347500,MSAC DS - 2010 - Westinghouse HS
+6,T-183,Cortland Chicago River,North Branch (North),From,20131300,Bridge - Cortland St - Design/Construction
+7,T-183,Cortland Chicago River,North Branch (North),From,5000000,Bridge - Cortland/Webster
+8,T-183,Cortland Chicago River,North Branch (North),From,24637200,Bridge - Webster
+9,T-183,Cortland Chicago River,North Branch (North),From,6046100,Intersection Reconfiguration - Armitage/Elston/Ashland
+10,T-183,Cortland Chicago River,North Branch (South),From,1000000,DPD - Study - North Branch Park Study
+11,T-183,Cortland Chicago River,North Branch (South),From,7600000,Intersection Reconfiguration - Armitage/Elston/Ashland
+12,T-134,Devon/Sheridan,Red Purple Transit,From,1979200,Red Purple Modernization Transit TIF
+13,T-076,Devon/Western,Touhy/Western,To,-1960100,MSAC Bond - West Ridge Elementary - 2010-B
+14,T-076,Devon/Western,Touhy/Western,To,-2290000,MSAC DS - 2020-A3 - West Ridge ES
+15,T-023,Goose Island,North Branch (South),From,20000000,Bridge replacement - Division/N Branch River
+16,T-157,Hollywood/Sheridan,Lawrence/Broadway,From,575800,RDA - Hollywood House
+17,T-157,Hollywood/Sheridan,Red Purple Transit,From,12792600,Red Purple Modernization Transit TIF
+18,T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-5347500,MSAC DS - 2010 - Westinghouse HS
+19,T-052,Kinzie Industrial Corridor,Midwest,To,-5100000,Street improvements
+20,T-103,Lake Calumet Area Industrial,116th Ave O,To,-4512000,RDA - North Point
+21,T-109,Lawrence/Broadway,Red Purple Transit,From,18358400,Red Purple Modernization Transit TIF
+22,T-109,Lawrence/Broadway,Hollywood/Sheridan,To,-575800,RDA - Hollywood House
+23,T-095,Midwest,Kinzie Industrial Corridor,From,5100000,Street improvements
+24,T-095,Midwest,Ogden/Pulaski,To,-800000,Invest South West Program
+25,T-033,North Branch (North),Cortland Chicago River,To,-20131300,Bridge - Cortland St - Design/Construction
+26,T-033,North Branch (North),Cortland Chicago River,To,-5000000,Bridge - Cortland/Webster
+27,T-033,North Branch (North),Cortland Chicago River,To,-24637200,Bridge - Webster
+28,T-033,North Branch (North),Cortland Chicago River,To,-6046100,Intersection Reconfiguration - Armitage/Elston/Ashland
+29,T-034,North Branch (South),Cortland Chicago River,To,-1000000,DPD - Study - North Branch Park Study
+30,T-034,North Branch (South),Cortland Chicago River,To,-7600000,Intersection Reconfiguration - Armitage/Elston/Ashland
+31,T-034,North Branch (South),Goose Island,To,-20000000,Bridge replacement - Division/N Branch River
+32,T-166,North Pullman,Roseland/Michigan,From,240100,RDA - Whole Foods Distribution
+33,T-166,North Pullman,Stony Island Avenue Commercial and Burnside Industrial Corridors,From,2000000,Gately Park
+34,T-035,North-Cicero,Austin Commercial,To,-3000000,Invest South West Program
+35,T-035,North-Cicero,Northwest Industrial Corridor,To,-1000000,AIS - DSS - Ferdinand Maintenance Garage - 4233 W Ferdinand - improvements
+36,T-035,North-Cicero,Northwest Industrial Corridor,To,-2000000,AIS - Northwest Material Recycling - 750 N Kilbourn Ave
+37,T-035,North-Cicero,Northwest Industrial Corridor,To,-5231400,Invest South West Program
+38,T-064,Northwest Industrial Corridor,North-Cicero,From,1000000,AIS - DSS - Ferdinand Maintenance Garage - 4233 W Ferdinand - improvements
+39,T-064,Northwest Industrial Corridor,North-Cicero,From,2000000,AIS - Northwest Material Recycling - 750 N Kilbourn Ave
+40,T-064,Northwest Industrial Corridor,North-Cicero,From,5231400,Invest South West Program
+41,T-161,Ogden/Pulaski,Midwest,From,800000,Invest South West Program
+42,T-180,Red Purple Transit,Bryn Mawr/Broadway,To,-15289300,Red Purple Modernization Transit TIF
+43,T-180,Red Purple Transit,Devon/Sheridan,To,-1979200,Red Purple Modernization Transit TIF
+44,T-180,Red Purple Transit,Hollywood/Sheridan,To,-12792600,Red Purple Modernization Transit TIF
+45,T-180,Red Purple Transit,Lawrence/Broadway,To,-18358400,Red Purple Modernization Transit TIF
+46,T-180,Red Purple Transit,Wilson Yard,To,-6580400,Red Purple Modernization Transit TIF
+47,T-037,River South,Roosevelt Clark,To,-55240500,Wells Wentworth Connector
+48,T-037,River South,Roosevelt Clark,To,-577800,Bridge - Taylor St
+49,T-184,Roosevelt Clark,River South,From,577800,Bridge - Taylor St
+50,T-184,Roosevelt Clark,River South,From,55240500,Wells Wentworth Connector
+51,T-113,Roseland/Michigan,North Pullman,To,-240100,RDA - Whole Foods Distribution
+52,T-054,Stony Island Avenue Commercial and Burnside Industrial Corridors,North Pullman,To,-2000000,Gately Park
+53,T-146,Touhy/Western,Devon/Western,From,1960100,MSAC Bond - West Ridge Elementary - 2010-B
+54,T-146,Touhy/Western,Devon/Western,From,2290000,MSAC DS - 2020-A3 - West Ridge ES
+55,T-110,Wilson Yard,Red Purple Transit,From,6580400,Red Purple Modernization Transit TIF

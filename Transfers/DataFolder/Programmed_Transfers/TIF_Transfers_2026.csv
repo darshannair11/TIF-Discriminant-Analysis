@@ -1,0 +1,11 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-176,107th/Halsted,119th/I-57,From,1000000,Invest South West Program
+T-125,119th/I-57,107th/Halsted,To,-1000000,Invest South West Program
+T-063,Canal/Congress,Roosevelt Clark,To,-24285800,Infra-Structure - Roosevelt Clark TIF
+T-075,Madison/Austin Corridor,Northwest Ind. Corr.,From,1500000,Invest South West Program
+T-095,Midwest,Ogden/Pulaski,To,-6408000,Invest South West Program
+T-166,North Pullman,Roseland/Michigan,From,145000,RDA - Whole Foods Distribution
+T-064,Northwest Industrial Corridor,Madison/Austin,To,-1500000,Invest South West Program
+T-161,Ogden/Pulaski,Midwest,From,6408000,Invest South West Program
+T-184,Roosevelt Clark,Canal/Congress,From,24285800,Infra-Structure - Roosevelt Clark TIF
+T-113,Roseland/Michigan,North Pullman,To,-145000,RDA - Whole Foods Distribution

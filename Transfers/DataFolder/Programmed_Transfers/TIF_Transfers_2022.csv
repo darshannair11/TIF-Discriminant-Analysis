@@ -1,0 +1,77 @@
+TIF Number,TIF1,TIF2,Direction,Amount,Project
+T-114,119th and Halsted,Roseland/Michigan,To,-1000000,Invest South West Program
+T-079,35th and Wallace,35th/State,To,-6000000,CHA Transformation project
+T-131,35th/State,35th and Wallace,From,6000000,CHA Transformation project
+T-055,43rd/Cottage Grove,47th/King,From,20000000,Invest South West Program
+T-118,47th/King Drive,43rd/Cottage Grove,To,-20000000,Invest South West Program
+T-097,51st/Archer,63rd/Pulaski,From,164300,MSAC DS - Hernandez MS
+T-098,63rd/Pulaski,51st/Archer,To,-164300,MSAC DS - Hernandez MS
+T-174,67th/Wentworth,87th/Cottage Grove,From,100000,DPD - Pre-Development Services Consultant - Opportunity Sites
+T-060,71st/Stony Island,Avalon Park/South Shore,From,5000,Invest South West Program
+T-060,71st/Stony Island,Woodlawn,From,2000000,RDA - Jeffery Plaza
+T-060,71st/Stony Island,Avalon Park/South Shore,To,-2694600,Invest South West Program
+T-127,87th/Cottage Grove,67th/Wentworth,To,-100000,DPD - Pre-Development Services Consultant - Opportunity Sites
+T-156,Austin Commercial,Northwest Ind. Corr.,From,6548400,Invest South West Program
+T-123,Avalon Park/South Shore,71st/Stony Island,From,2694600,Invest South West Program
+T-123,Avalon Park/South Shore,71st/Stony Island,To,-5000,Invest South West Program
+T-013,Bryn Mawr/Broadway,Red Purple Transit,From,11260200,Red Purple Modernization Transit TIF
+T-086,Central West,Midwest,To,-2500000,Park Project
+T-086,Central West,Midwest,To,-2000000,AIS - Fleet Facility - 3104 W Harrison - Improvements
+T-115,Chicago/Central Park,Kinzie Ind. Corr.,From,2788900,Invest South West Program
+T-115,Chicago/Central Park,Kinzie Ind. Corr.,From,1024100,MSAC DS - 2010 - Westinghouse HS
+T-185,Cicero Stevenson,Midway Ind. Corr.,From,6600000,CHA Transformation - LeClaire Courts
+T-183,Cortland Chicago River,North Branch South,From,5000000,Bridge - Cortland St
+T-183,Cortland Chicago River,North Branch South,From,5000000,Bridge - Webster St
+T-183,Cortland Chicago River,North Branch South,From,13392000,Intersection Reconfiguration - Armitage/Elston/Ashland
+T-134,Devon/Sheridan,Red Purple Transit,From,1190000,Red Purple Modernization Transit TIF
+T-076,Devon/Western,Touhy/Western,To,-2004100,MSAC Bond - West Ridge Elementary - 2010-B
+T-177,Foster/California,Western Ave. North,From,300000,CPS - Budlong
+T-177,Foster/California,Western Ave. North,From,515000,Lighting
+T-177,Foster/California,Western Ave. North,From,375000,Traffic signals
+T-157,Hollywood/Sheridan,Lawrence/Broadway,From,1151600,RDA - Hollywood House
+T-157,Hollywood/Sheridan,Red Purple Transit,From,7281600,Red Purple Modernization Transit TIF
+T-057,Jefferson Park Business District,Portage Park,From,500000,CPD - Jefferson Park
+T-057,Jefferson Park Business District,Portage Park,From,1635000,Street improvements
+T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-2788900,Invest South West Program
+T-052,Kinzie Industrial Corridor,Chicago/Central Park,To,-1024100,MSAC DS - 2010 - Westinghouse HS
+T-052,Kinzie Industrial Corridor,Midwest,To,-2200000,AIS - Garfield Community Center - 10 S Kedzie Ave
+T-052,Kinzie Industrial Corridor,Midwest,To,-2833500,CTA - Green Line - Track/Structural Improvements
+T-109,Lawrence/Broadway,Red Purple Transit,From,9147900,Red Purple Modernization Transit TIF
+T-109,Lawrence/Broadway,Hollywood/Sheridan,To,-1151600,RDA - Hollywood House
+T-075,Madison/Austin Corridor,Midwest,From,2040000,Lighting
+T-089,Midway Industrial Corridor,Cicero Stevenson,To,-6600000,CHA Transformation - LeClaire Courts
+T-095,Midwest,Central West,From,2000000,AIS - Fleet Facility - 3104 W Harrison - Improvements
+T-095,Midwest,Kinzie Ind. Corr.,From,2200000,AIS - Garfield Community Center - 10 S Kedzie Ave
+T-095,Midwest,Kinzie Ind. Corr.,From,2833500,CTA - Green Line - Track/Structural Improvements
+T-095,Midwest,Central West,From,2500000,Park Project
+T-095,Midwest,Madison/Austin,To,-2040000,Lighting
+T-095,Midwest,Ogden/Pulaski,To,-239300,Invest South West Program
+T-034,North Branch (South),Cortland Chicago River,To,-5000000,Bridge - Cortland St
+T-034,North Branch (South),Cortland Chicago River,To,-5000000,Bridge - Webster St
+T-034,North Branch (South),Cortland Chicago River,To,-13392000,Intersection Reconfiguration - Armitage/Elston/Ashland
+T-166,North Pullman,Roseland/Michigan,From,349700,RDA - Whole Foods Distribution
+T-166,North Pullman,Stony Island/Burnside,From,2000000,Gately Park
+T-064,Northwest Industrial Corridor,Austin Commercial,To,-6548400,Invest South West Program
+T-161,Ogden/Pulaski,Midwest,From,239300,Invest South West Program
+T-058,Portage Park,Jefferson Park,To,-500000,CPD - Jefferson Park
+T-058,Portage Park,Jefferson Park,To,-1635000,Street improvements
+T-180,Red Purple Transit,Bryn Mawr/Broadway,To,-11260200,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Devon/Sheridan,To,-1190000,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Hollywood/Sheridan,To,-7281600,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Lawrence/Broadway,To,-9147900,Red Purple Modernization Transit TIF
+T-180,Red Purple Transit,Wilson Yard,To,-2125900,Red Purple Modernization Transit TIF
+T-062,Roosevelt/Racine,Western/Ogden,From,3140000,Park project
+T-113,Roseland/Michigan,119th/Halsted,From,1000000,Invest South West Program
+T-113,Roseland/Michigan,North Pullman,To,-349700,RDA - Whole Foods Distribution
+T-054,Stony Island Avenue Commercial and Burnside Industrial Corridors,North Pullman,To,-2000000,Gately Park
+T-146,Touhy/Western,Devon/Western,From,2004100,MSAC Bond - West Ridge Elementary - 2010-B
+T-171,West Woodlawn,Woodlawn,From,500000,SBIF
+T-084,Western Avenue North,Western Ave. South,From,1750000,Streetscape - Lawrence Av
+T-084,Western Avenue North,Foster/California,To,-300000,CPS - Budlong
+T-084,Western Avenue North,Foster/California,To,-515000,Lighting
+T-084,Western Avenue North,Foster/California,To,-375000,Traffic signals
+T-085,Western Avenue South,Western Ave. North,To,-1750000,Streetscape - Lawrence Av
+T-048,Western/Ogden,Roosevelt/Racine,To,-3140000,Park project
+T-110,Wilson Yard,Red Purple Transit,From,2125900,Red Purple Modernization Transit TIF
+T-065,Woodlawn,West Woodlawn,To,-500000,SBIF
+T-065,Woodlawn,71st/Stony Island,To,-2000000,RDA - Jeffery Plaza
